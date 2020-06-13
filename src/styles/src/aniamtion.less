@@ -1,0 +1,38 @@
+
+.collapse-enter-active, .collapse-leave-active {
+  transition: height .2s;
+}
+.collapse-enter, .collapse-leave-to {
+  height: 0 !important;
+}
+
+.page-back-enter-active, .page-back-leave-active, .page-go-enter-active, .page-go-leave-active {
+  transition: transform .2s;
+}
+.page-go-enter {
+  transform: translateX(100%);
+}
+.page-go-leave-to {
+  transform: translateX(-100%);
+}
+.page-back-enter {
+  transform: translateX(-100%);
+}
+.page-back-leave-to {
+  transform: translateX(100%);
+}
+
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .3s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
